@@ -79,7 +79,57 @@ final class SiteEditorGoogleMap{
 
         add_action( 'plugins_loaded', array($this, 'includes') );
 
+        add_action( "sed_front_end_print_js_settings" , array( $this , 'print_js_settings' ) );
+
+        add_filter( "sed_theme_options_panels_filter" , array( $this , 'register_theme_panels' ) , 100 );
+
+        add_filter( "sed_theme_options_fields_filter" , array( $this , 'register_theme_fields' ) );
+
         add_filter("sed_modules" , array( $this , "add_modules" ) );
+
+    }
+
+    public function print_js_settings(){ //AIzaSyDoHumIzuSEzexl3CsF0u73UM_9CxqsPIA
+
+        echo 'var SED_GOOGLE_MAP_MODULES_URL = "' . SED_GOOGLE_MAP_MODULES_URL . '";';
+
+        echo 'var SED_WP_INCLUDES_URL = "' . includes_url() . '";';
+
+        echo 'var SED_GOOGLE_API_KEY = "' . get_theme_mod( 'sed_google_api_key' , '' ) . '";';
+
+    }
+
+    public function register_theme_panels( $panels ){
+
+        $panels['api_key_settings_panel'] = array(
+            'title'                 =>  __('Api Key Settings',"site-editor")  ,
+            'capability'            => 'edit_theme_options' ,
+            'type'                  => 'inner_box' ,
+            'priority'              => 100 ,
+            'btn_style'             => 'menu' ,
+            'has_border_box'        => false ,
+            'icon'                  => 'sedico-setting' ,
+            'field_spacing'         => 'sm'
+        );
+
+        return $panels;
+
+    }
+
+    public function register_theme_fields( $fields ){
+
+        $fields['google_api_key'] = array(
+            'setting_id'        => 'sed_google_api_key',
+            'label'             => __('Google Api Key', 'site-editor'),
+            'description'       => __( 'Google Api Key For Google Map' , 'site-editor' ),
+            'type'              => 'text',
+            'default'           => '',
+            'option_type'       => 'theme_mod',
+            'transport'         => 'refresh' ,
+            'panel'             => 'api_key_settings_panel'
+        );
+
+        return $fields;
 
     }
 

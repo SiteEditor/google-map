@@ -63,8 +63,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
     <title>Custom Google Map</title>
-      <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDoHumIzuSEzexl3CsF0u73UM_9CxqsPIA&callback=initMap"></script>
-      <script type="text/javascript" src="<?php echo $baseUrl . '/wp-includes/js/jquery/jquery.js';?>"></script>
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=<?php echo $_REQUEST['api_key'];?>"></script>
+      <script type="text/javascript" src="<?php echo $baseUrl . '/js/jquery/jquery.js';?>"></script>
       <script type="text/javascript" src="<?php echo $moduleUrl . '/google-map/js/gmap-min.js';?>"></script>
       <style type="text/css">
       <!--

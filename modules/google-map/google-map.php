@@ -23,12 +23,10 @@ class PBGoogleMapShortcode extends PBShortcodeClass{
             ) // Args
 		);
 
-		add_action( "sed_front_end_print_js_settings" , array( $this , 'print_js_settings' ) );
-
 	}
 
     function get_atts(){
-        global $sed_general_data; 
+
         $atts = array(                            
     		'setting_address'               => __('500 Terry Francois Street, 6th Floor. San Francisco, CA 94158', 'site-editor'),
             'setting_description'           => __("Stars Ideas Office","site-editor"),
@@ -41,22 +39,16 @@ class PBGoogleMapShortcode extends PBShortcodeClass{
             'setting_street_view_control'   => true,
             'setting_scrollwheel'           => false,
             'setting_scale_control'         => false,
-            'setting_overlay_color'         => ( is_array( $sed_general_data ) && !empty( $sed_general_data ) ) ? $sed_general_data['sed-main-color'] : '#21C2F8' ,
+            'setting_overlay_color'         => '' ,
             "has_cover"                     => true
         );
 
         return $atts;
     }
 
-	public function print_js_settings(){
-
-		echo 'var SED_GOOGLE_MAP_MODULES_URL = "' . SED_GOOGLE_MAP_MODULES_URL . '";';
-
-	}
-
     function add_shortcode( $atts , $content = null ){
 
-        $atts['setting_url']  = SED_GOOGLE_MAP_MODULES_URL . '/google-map/sed-gmap-custom.php';
+        $atts['setting_url']  = SED_GOOGLE_MAP_MODULES_URL . '/google-map/sed-gmap-custom.php?api_key=' . get_theme_mod( 'sed_google_api_key' , '' );
 
         $atts['setting_base_url'] = includes_url();
 
