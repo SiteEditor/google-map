@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Site Editor Google Map
-Plugin URI: http://www.siteeditor.org/
+Plugin URI: http://www.siteeditor.org
 Description: Site Editor Google Map added simple google map to your site with site editor
 Author: Site Editor Team
-Author URI: http://www.siteeditor.org/site-editor-team
-Version: 0.1
+Author URI: http://www.siteeditor.org
+Version: 1.0.0
 */
 
 if(!defined('DS'))

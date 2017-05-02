@@ -1,16 +1,15 @@
-# Site Editor Google Map - with drag and drop
+=== Site Editor Google Map - with drag and drop  ===
+Contributors: wpsiteeditor
+Tags: google map, map, google, site editor, site builder, page builder, theme builder, responsive, front end editor, drag-and-drop, wordpress, elements, modules, support, seo,
+Requires at least: 4.7
+Tested up to: 4.7.4
+Stable tag: 1.0.0
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-**Contributors:** [wpsiteeditor](https://profiles.wordpress.org/wpsiteeditor/) 
-**Tags:** google map, map, google, site editor, site builder, page builder, theme builder, responsive, front end editor, drag-and-drop, wordpress, elements, modules, support, seo,
-**Requires at least:** 4.7
-**Tested up to:** 4.7.4
-**Stable tag:** 1.0.0
-**License:** GPLv3
-**License URI:** https://www.gnu.org/licenses/gpl-3.0.html
+The best solution for add Google Map to your Wordpress site with The best drag and drop WordPress Site Builder and Page Builder.
 
-**The best solution for add Google Map to your Wordpress site with The best drag and drop WordPress Site Builder and Page Builder.**
-
-# Description
+== Description ==
 
 Site Editor Google Map add simple google map to your site with [Site Editor](https://wordpress.org/plugins/site-editor)
 
@@ -28,7 +27,6 @@ This plugin is a extension for [Site Editor](https://wordpress.org/plugins/site-
 * Responsive maps
 * Add to any page or post with drag & drop
 * Super easy to use, no coding required!
-* Apply all settings in front end editor and fully live
 * Add Multi Addresses to map
 * Support "roadmap" , "satellite" , "hybrid" and "terrain" map type
 * Custom Zoom Level
@@ -43,37 +41,30 @@ This plugin is a extension for [Site Editor](https://wordpress.org/plugins/site-
 * Animation for show map
 * Add Custom Description
 
-And More!
-
-**BE A CONTRIBUTOR**
-
-If you want to contribute, go to our [SiteEditor Google Map GitHub Repository](https://github.com/SiteEditor/google-map) and see where you can help.
-
-You can also add a new language via [translate.wordpress.org](https://translate.wordpress.org).
-
 == Frequently Asked Questions ==
 
 Troubleshooting:
 
 **https://wordpress.org/support/plugin/site-editor-google-map**
 
-# Installation
+== Installation ==
 
 1. Go to the Plugins Menu in WordPress
 2. Search for "Site Editor"
 3. Click "Install"
 
-# Screenshots
+== Screenshots ==
 
 1. Google Map in Site Editor
 2. Google Map
 
-# Changelog
+== Changelog ==
 
 = 1.0 =
 
-**1.0 - Released: May 2th, 2017**
+**1.0 - Released: April 19th, 2017**
 
 * Initial release
 
-# Upgrade Notice
+
+== Upgrade Notice ==
