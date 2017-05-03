@@ -5,7 +5,7 @@ Plugin URI: http://www.siteeditor.org/extensions/google-map
 Description: Site Editor Google Map added simple google map to your site with site editor
 Author: Site Editor Team
 Author URI: http://www.siteeditor.org
-Version: 1.0.0
+Version: 1.0.1
 */
 
 if(!defined('DS'))

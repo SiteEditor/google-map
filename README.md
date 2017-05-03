@@ -4,7 +4,7 @@
 **Tags:** google map, map, google, site editor, site builder, page builder, theme builder, responsive, front end editor, drag-and-drop, wordpress, elements, modules, support, seo,
 **Requires at least:** 4.7
 **Tested up to:** 4.7.4
-**Stable tag:** 1.0.0
+**Stable tag:** 1.0.1
 **License:** GPLv3
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,7 +18,7 @@ This plugin is a extension for [Site Editor](https://wordpress.org/plugins/site-
 
 **OUR OFFICIAL WEBSITE & GITHUB**
 
-[SiteEditor.ORG](https://www.siteeditor.org)
+[SiteEditor.ORG](http://www.siteeditor.org)
 
 [SiteEditor GitHub Repository](https://github.com/SiteEditor/google-map)
 
@@ -75,5 +75,13 @@ Troubleshooting:
 **1.0 - Released: May 2th, 2017**
 
 * Initial release
+
+= 1.0.1 =
+
+**1.0.1 - Released: May 2th, 2017**
+
+* Remove Extra Settings
+
+* Add New Settings
 
 # Upgrade Notice
